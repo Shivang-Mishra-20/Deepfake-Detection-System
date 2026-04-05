@@ -149,10 +149,3 @@ This project is intentionally designed to run at **zero cost**:
 Shivang Mishra
 
 ```
-
----
-
-Next step is where your project actually becomes dangerous instead of decorative.
-
-Say **“start config”**.
-```
