@@ -1,0 +1,31 @@
+project:
+  name: "Deepfake Detection System"
+  version: "1.0"
+
+paths:
+  train_dir: "data/raw/train"
+  val_dir: "data/raw/val"
+  model_save_path: "models/final_model.keras"
+  class_indices_path: "models/class_indices.json"
+
+training:
+  image_size: 224
+  batch_size: 32
+  epochs: 10
+  learning_rate: 0.0001
+
+model:
+  architecture: "EfficientNetB0"
+  weights: "imagenet"
+  trainable_layers: 20
+
+augmentation:
+  rotation_range: 20
+  width_shift_range: 0.1
+  height_shift_range: 0.1
+  shear_range: 0.1
+  zoom_range: 0.2
+  horizontal_flip: true
+
+inference:
+  confidence_threshold: 0.5
